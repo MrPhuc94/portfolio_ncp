@@ -15,9 +15,9 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Nguyễn Chí Phong | Event Organizer Portfolio",
+  title: "Nguyễn Chí Phong | Portfolio Tổ chức sự kiện",
   description:
-    "Portfolio của Nguyễn Chí Phong — sinh viên Truyền thông Đa phương tiện, định hướng Tổ chức sự kiện & Điều phối dự án tại FPT University Hà Nội.",
+    "Portfolio của Nguyễn Chí Phong — sinh viên Truyền thông Đa phương tiện, định hướng Tổ chức sự kiện và Điều phối dự án tại Đại học FPT Hà Nội.",
 };
 
 export default function RootLayout({

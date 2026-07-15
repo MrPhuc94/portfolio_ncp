@@ -6,7 +6,7 @@ export const profile = {
     "Lập kế hoạch & Tổ chức sự kiện",
     "Điều phối dự án",
   ],
-  headline: "Tổ chức sự kiện chỉn chu, mang trải nghiệm và giá trị cho cộng đồng.",
+  headline: "Tổ chức sự kiện, mang lại trải nghiệm và giá trị cho cộng đồng.",
   about: [
     "Mình là sinh viên ngành Truyền thông Đa phương tiện tại Đại học FPT Hà Nội, định hướng phát triển trong lĩnh vực Tổ chức sự kiện.",
     "Trong hơn 02 năm tham gia các hoạt động câu lạc bộ và dự án cộng đồng, mình đã đảm nhận nhiều vai trò như Chủ nhiệm CLB, Trưởng Ban Tổ chức, Trưởng Ban Nội dung và Thành viên Ban Hậu cần, tích lũy kinh nghiệm từ khâu lên ý tưởng, lập kế hoạch đến triển khai và vận hành sự kiện.",
@@ -42,13 +42,11 @@ export const skills = {
     "Điều phối nhân sự",
     "Quản lý hậu cần",
   ],
-  content: [
-    "Truyền thông",
-    "Lập kế hoạch nội dung",
-    "Quản lý mạng xã hội",
-    "Viết nội dung",
-  ],
   creative: ["Sáng tạo", "Phát triển ý tưởng", "Thiết kế cơ bản", "Chỉnh sửa video"],
+  content: [
+    "Canva",
+    "Capcut"
+  ],
 };
 
 export type Project = {
@@ -71,7 +69,7 @@ export const projects: Project[] = [
     number: "01",
     title: "Khi Im Lặng Lên Tiếng",
     category: "Dự án Văn hóa · Nghệ thuật cộng đồng",
-    role: "Event Organizer & Logistics Coordinator",
+    role: "Tổ chức sự kiện & Điều phối hậu cần",
     overview:
       "Khi Im Lặng Lên Tiếng là dự án nghệ thuật cộng đồng sử dụng kịch câm như một phương tiện truyền tải thông điệp về cảm xúc và kết nối con người. Thông qua ngôn ngữ cơ thể thay cho lời nói, dự án giúp khán giả khám phá sức mạnh của sự im lặng trong việc thấu hiểu, đồng cảm và biểu đạt cảm xúc. Đồng thời, dự án góp phần lan tỏa giá trị của nghệ thuật biểu diễn đến cộng đồng, đặc biệt là giới trẻ.",
     duties: [
@@ -102,7 +100,7 @@ export const projects: Project[] = [
     number: "02",
     title: "99 Seconds",
     category: "Dự án Giáo dục cộng đồng",
-    role: "Event Organizer & Logistics Coordinator",
+    role: "Tổ chức sự kiện & Điều phối hậu cần",
     overview:
       "99 SECONDS là dự án giáo dục cộng đồng nhằm nâng cao nhận thức về phòng chống đuối nước cho trẻ em thông qua mô hình talkshow kết hợp trải nghiệm thực tế. Chương trình hướng đến việc trang bị kiến thức, kỹ năng xử lý tình huống và xây dựng ý thức chủ động trong việc bảo vệ bản thân trước các nguy cơ đuối nước.",
     duties: [
@@ -133,7 +131,7 @@ export const projects: Project[] = [
     number: "03",
     title: "Hoa Trên Đá",
     category: "Dự án Truyền thông văn hóa",
-    role: "Event Organizer & Logistics Coordinator",
+    role: "Tổ chức sự kiện & Điều phối hậu cần",
     overview:
       "Hoa Trên Đá là dự án truyền thông văn hóa nhằm giới thiệu và lan tỏa những giá trị đặc sắc của dân tộc H'Mông thông qua các hoạt động trải nghiệm, trưng bày và giao lưu văn hóa. Dự án hướng đến việc giúp người trẻ hiểu hơn về bản sắc dân tộc, góp phần gìn giữ và quảng bá các giá trị văn hóa truyền thống.",
     duties: [

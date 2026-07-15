@@ -1,46 +1,63 @@
 import Image from "next/image";
-import { profile } from "@/data/portfolio";
+import { profile, projects } from "@/data/portfolio";
 
 export function Hero() {
   return (
-    <section
-      id="top"
-      className="relative flex min-h-[100svh] items-end overflow-hidden"
-    >
-      <div className="absolute inset-0 bg-stage" aria-hidden>
+    <section id="top" className="relative min-h-[100svh] overflow-hidden bg-stage">
+      <div className="absolute inset-0" aria-hidden>
         <Image
           src="/assets/sk1_2.jpg"
           alt=""
           fill
           priority
-          className="object-cover object-center opacity-55"
+          quality={70}
+          className="object-cover object-center opacity-40"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(23,17,14,0.55)_0%,rgba(23,17,14,0.7)_45%,rgba(23,17,14,0.94)_100%)]" />
-        <div className="animate-spotlight absolute -top-20 left-1/2 h-[70vh] w-[70vw] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(255,196,77,0.22),transparent_65%)]" />
-        <div className="absolute inset-x-0 bottom-0 h-px bg-[linear-gradient(90deg,transparent,rgba(255,196,77,0.65),transparent)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(23,17,14,0.55)_0%,rgba(23,17,14,0.78)_55%,rgba(23,17,14,0.96)_100%)]" />
       </div>
 
-      <div className="container relative z-10 w-full pb-16 pt-28 md:pb-24">
-        <p className="section-label animate-rise !text-accent-bright">
-          {profile.greeting}
+      <div className="container relative z-10 flex min-h-[100svh] flex-col justify-end pb-14 pt-28 md:pb-20">
+        <p className="section-label hero-in !text-accent-bright">
+          Portfolio 2025 · Tổ chức sự kiện
         </p>
-        <h1 className="display animate-rise-delay-1 mt-4 max-w-5xl text-[clamp(3rem,10vw,7.2rem)] text-bg-soft">
-          {profile.name.split(" ").slice(0, -1).join(" ")}{" "}
-          <span className="bg-[linear-gradient(120deg,#ffc44d_0%,#ff8a3d_55%,#e87820_100%)] bg-clip-text text-transparent">
-            {profile.name.split(" ").slice(-1)}
-          </span>
+        <h1 className="display hero-in hero-in-1 mt-4 max-w-4xl text-[clamp(2.8rem,9vw,6.5rem)] text-white">
+          {profile.name}
         </h1>
-        <p className="animate-rise-delay-2 mt-6 max-w-xl text-lg leading-relaxed text-white/75 sm:text-xl">
+        <p className="hero-in hero-in-2 mt-5 max-w-xl text-base leading-relaxed text-white/70 md:text-lg">
           {profile.headline}
         </p>
-        <div className="animate-rise-delay-3 mt-9 flex flex-wrap gap-3">
+        <div className="hero-in hero-in-3 mt-8 flex flex-wrap gap-3">
           <a href="#projects" className="btn-primary">
             Xem dự án
           </a>
           <a href="#contact" className="btn-ghost">
             Liên hệ
           </a>
+        </div>
+
+        <div className="mt-12 grid grid-cols-3 gap-2 border-t border-white/15 pt-6 md:gap-3">
+          {projects.map((project) => (
+            <a
+              key={project.id}
+              href={`#${project.id}`}
+              className="group rounded-xl border border-white/10 bg-white/5 p-2 transition hover:border-accent/50 hover:bg-white/10"
+            >
+              <div className="flex h-[72px] items-center justify-center overflow-hidden rounded-lg bg-black/30 md:h-[88px]">
+                <Image
+                  src={project.cover}
+                  alt={project.title}
+                  width={240}
+                  height={160}
+                  quality={60}
+                  className="h-auto max-h-[64px] w-auto max-w-[90%] object-contain md:max-h-[76px]"
+                />
+              </div>
+              <p className="mt-2 truncate text-[0.65rem] font-semibold tracking-wide text-white/55 group-hover:text-accent-bright md:text-xs">
+                {project.number} · {project.title}
+              </p>
+            </a>
+          ))}
         </div>
       </div>
     </section>

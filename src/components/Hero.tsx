@@ -21,8 +21,11 @@ export function Hero() {
         <p className="section-label hero-in !text-accent-bright">
           Portfolio 2025 · Tổ chức sự kiện
         </p>
-        <h1 className="display hero-in hero-in-1 mt-4 max-w-4xl text-[clamp(2.8rem,9vw,6.5rem)] text-white">
-          {profile.name}
+        <h1 className="display hero-in hero-in-1 mt-4 whitespace-nowrap text-[clamp(2.2rem,7.5vw,6.5rem)] text-white">
+          Nguyễn Chí{" "}
+          <span className="bg-[linear-gradient(120deg,#ffc44d_0%,#ff8a3d_55%,#e87820_100%)] bg-clip-text text-transparent">
+            Phong
+          </span>
         </h1>
         <p className="hero-in hero-in-2 mt-5 max-w-xl text-base leading-relaxed text-white/70 md:text-lg">
           {profile.headline}
